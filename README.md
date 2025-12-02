@@ -1,7 +1,5 @@
 
 
-
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -9,221 +7,212 @@
 <title>Catálogo de Equipos</title>
 
 <style>
-/* 🎄 ESTILO NAVIDEÑO */
+/* ============================================================
+   🎄 ESTILO GENERAL – NAVIDEÑO + MODERNO
+   ============================================================ */
 body {
-    background: url("https://i.postimg.cc/vZFLR2zh/bg-navidad.jpg") no-repeat center center fixed;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: url("https://w.wallhaven.cc/full/z8/wallhaven-z8moew.jpg") no-repeat center center fixed;
     background-size: cover;
+    color: white;
 }
 
-/* Fondo semitransparente para que se lean las tarjetas */
-.contenedor, .buscador-container {
+/* Contenedor general */
+.contenedor, 
+.buscador-container {
     background: rgba(0, 0, 0, 0.55);
     border-radius: 10px;
 }
 
-/* ❄️ Copos de nieve */
+/* ============================================================
+   ❄️ EFECTO DE NIEVE
+   ============================================================ */
 .snowflake {
     position: fixed;
     top: -10px;
     color: white;
-    font-size: 1rem;
     user-select: none;
-    animation: caer 8s linear infinite;
     opacity: 0.8;
+    animation: caer 8s linear infinite;
+    z-index: 2000;
 }
 @keyframes caer {
-    0% { transform: translateY(0) rotate(0); }
+    0%   { transform: translateY(0) rotate(0); }
     100% { transform: translateY(110vh) rotate(360deg); }
 }
 
-/* 🔴 Tarjetas con borde rojo navideño */
-.card {
-    border: 2px solid #ff2e2e;
-    box-shadow: 0 0 20px red;
-}
-
-/* Hover con brillo dorado */
-.card:hover {
-    box-shadow: 0 0 25px gold;
-}
-
-/* 🎅 Títulos navideños */
+/* ============================================================
+   🎅 ENCABEZADO
+   ============================================================ */
 h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.8rem;
     color: #fff;
     text-shadow: 0 0 10px red, 0 0 20px gold;
 }
 
-/* Precios en verde navideño */
+/* ============================================================
+   🔎 BUSCADOR
+   ============================================================ */
+.buscador-container {
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    z-index: 50;
+    background: rgba(17,17,17,0.95);
+    border-bottom: 1px solid #fff;
+    backdrop-filter: blur(6px);
+}
+
+#buscador {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: #222;
+    border: 1px solid #fff;
+    color: white;
+    transition: 0.3s;
+}
+#buscador:focus {
+    outline: none;
+    box-shadow: 0 0 12px #00aaff;
+}
+
+/* ============================================================
+   📦 GRID DE TARJETAS
+   ============================================================ */
+.contenedor {
+    display: grid;
+    padding: 40px 20px;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ============================================================
+   🟥 TARJETAS DE EQUIPOS
+   ============================================================ */
+.card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #ff2e2e;
+    box-shadow: 0 0 18px #000, 0 0 20px red;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px gold;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Información */
+.info {
+    padding: 20px;
+}
+.info h2 {
+    font-size: 1.4rem;
+    margin: 0 0 8px;
+    color: #00ccff;
+}
+
+/* Precios y planes */
 .precio {
-    color: #00ff72 !important;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #00ff72;
 }
-
-/* Plan en dorado */
 .plan {
-    color: #ffe14b !important;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffe14b;
 }
 
-    body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        background: #0a0a0a;
-        color: white;
-    }
+/* Listas */
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+li {
+    font-size: 0.95rem;
+}
 
-    h1 {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 2.8rem;
-        text-shadow: 0 0 10px #00c2ff;
-    }
+/* ============================================================
+   🔥 MODAL DE IMÁGENES
+   ============================================================ */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
 
-    /* 🔵 BUSCADOR FIJO */
-    .buscador-container {
-        position: sticky;
-        top: 0;
-        background: rgba(17,17,17,0.95);
-        backdrop-filter: blur(6px);
-        padding: 15px 0;
-        z-index: 50;
-        border-bottom: 1px solid #fff;
-    }
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00aaff;
+}
 
-    #buscador {
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding: 12px;
-        font-size: 1.2rem;
-        border-radius: 10px;
-        border: 1px solid #fff;
-        background: #222;
-        color: white;
-        transition: 0.3s;
-    }
-
-    #buscador:focus {
-        box-shadow: 0 0 12px #00aaff;
-        outline: none;
-    }
-
-    .contenedor {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        padding: 40px 20px;
-    }
-
-    /* 🟣 TARJETAS */
-    .card {
-        background: #1a1a1a;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 0 18px #000;
-        transition: 0.3s;
-    }
-
-    .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 0 25px #00aaff;
-    }
-
-    .card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-
-    .info {
-        padding: 20px;
-    }
-
-    .info h2 {
-        font-size: 1.4rem;
-        margin: 0 0 8px;
-        color: #00ccff;
-    }
-
-    .precio {
-        font-size: 1.3rem;
-        margin: 5px 0;
-        font-weight: bold;
-        color: #00ffaa;
-    }
-
-    .plan {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-        color: #ffdd55;
-    }
-
-    ul {
-        padding-left: 20px;
-        line-height: 1.6;
-    }
-
-    li {
-        font-size: 0.95rem;
-    }
-
-    /* 🔥 MODAL MEJORADO */
-    .modal {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.8);
-        backdrop-filter: blur(5px);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .modal-content {
-        max-width: 90%;
-        max-height: 90%;
-        border-radius: 15px;
-        box-shadow: 0 0 20px #00aaff;
-    }
-
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 30px;
-        font-size: 40px;
-        cursor: pointer;
-        color: white;
-        text-shadow: 0 0 10px red;
-    }
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 10px red;
+}
 </style>
 </head>
+
 <body>
-<!-- ❄️ Copos de nieve -->
+
+<!-- ❄️ NIEVE -->
 <div id="snow"></div>
 
+<!-- 🎅 TÍTULO -->
 <h1>
-  <img src="https://i.postimg.cc/sxBB5PWQ/Diseno-sin-titulo.jpg" alt="imagen" style="width:250px; height:auto;">
+  <img src="https://www.pngplay.com/wp-content/uploads/3/Black-ATandT-Logo-PNG-HD-Quality.png" 
+       alt="imagen" style="width:250px; height:auto;">
   <br>
-  ¡BUSCA EL QUE MAS TE GUSTE!
+  ¡BUSCA EL QUE MÁS TE GUSTE!
 </h1>
 
-
-
-<!-- 🔵 BUSCADOR FIJO -->
+<!-- 🔎 BUSCADOR -->
 <div class="buscador-container">
     <input type="text" id="buscador" placeholder="Buscar equipo...">
 </div>
 
+<!-- 📦 CONTENEDOR DE TARJETAS -->
 <div class="contenedor" id="contenedor"></div>
 
-<!-- MODAL -->
+<!-- 🔥 MODAL DE IMÁGENES -->
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
+    <img id="img01" class="modal-content">
 </div>
 
 <script>
-/* ---------------------- LISTA COMPLETA ---------------------- */
+/* ============================================================
+   📌 LISTA DE EQUIPOS (SIN CAMBIAR)
+   ============================================================ */
 const equipos = [
 /* AQUI VA TODA TU LISTA ORIGINAL — NO SE CAMBIÓ NADA */
 {
@@ -1130,46 +1119,49 @@ const equipos = [
 
 ];
 
-/* ---------------------- MOSTRAR EQUIPOS ---------------------- */
+
+/* ============================================================
+   📌 FUNCIÓN PARA MOSTRAR EQUIPOS
+   ============================================================ */
 function mostrarEquipos(lista) {
     const contenedor = document.getElementById("contenedor");
-    contenedor.innerHTML = '';
+    contenedor.innerHTML = "";
 
     lista.forEach(equipo => {
         const card = document.createElement("div");
         card.className = "card";
 
         card.innerHTML = `
-            <img src="${equipo.imagen || 'https://via.placeholder.com/400x400?text=Sin+Imagen'}" 
-                 alt="${equipo.nombre}" 
+            <img src="${equipo.imagen || 'https://via.placeholder.com/400x400?text=Sin+Imagen'}"
+                 alt="${equipo.nombre}"
                  class="imagen-equipo">
 
             <div class="info">
                 <h2>${equipo.nombre}</h2>
                 <div class="precio">${equipo.precio}</div>
                 <div class="plan">${equipo.plan}</div>
-
-                <ul>
-                    ${equipo.caracteristicas.map(c => `<li>${c}</li>`).join('')}
-                </ul>
+                <ul>${equipo.caracteristicas.map(c => `<li>${c}</li>`).join("")}</ul>
             </div>
         `;
-
         contenedor.appendChild(card);
     });
 }
 
-/* ---------------------- BUSCADOR ---------------------- */
+/* ============================================================
+   🔍 BUSCADOR
+   ============================================================ */
 document.getElementById("buscador").addEventListener("input", function () {
-    const val = this.value.toLowerCase();
-    const filtrados = equipos.filter(e => e.nombre.toLowerCase().includes(val));
+    const texto = this.value.toLowerCase();
+    const filtrados = equipos.filter(e => e.nombre.toLowerCase().includes(texto));
     mostrarEquipos(filtrados);
 });
 
-/* Mostrar todos */
+/* Mostrar todos al inicio */
 mostrarEquipos(equipos);
 
-/* ---------------------- MODAL ---------------------- */
+/* ============================================================
+   🖼️ MODAL DE IMÁGENES
+   ============================================================ */
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("img01");
 
@@ -1181,25 +1173,24 @@ document.addEventListener("click", e => {
 });
 
 document.querySelector(".close").onclick = () => modal.style.display = "none";
+modal.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
 
-modal.onclick = e => {
-    if (e.target === modal) modal.style.display = "none";
-};
-/* ❄️ Generador de nieve */
+/* ============================================================
+   ❄️ GENERADOR DE NIEVE
+   ============================================================ */
 function crearNieve() {
     const snow = document.getElementById("snow");
     for (let i = 0; i < 25; i++) {
         const copo = document.createElement("div");
         copo.className = "snowflake";
-        copo.innerHTML = "❄";
+        copo.textContent = "❄";
         copo.style.left = Math.random() * 100 + "vw";
         copo.style.animationDelay = Math.random() * 8 + "s";
-        copo.style.fontSize = 10 + Math.random() * 20 + "px";
+        copo.style.fontSize = (10 + Math.random() * 20) + "px";
         snow.appendChild(copo);
     }
 }
 crearNieve();
-
 </script>
 
 </body>
