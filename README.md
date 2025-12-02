@@ -189,7 +189,8 @@ li {
 
 <!-- 🎅 TÍTULO -->
 <h1>
-  <img src="https://www.pngplay.com/wp-content/uploads/3/Black-ATandT-Logo-PNG-HD-Quality.png" 
+<img src="https://www.pngplay.com/wp-content/uploads/3/Black-ATandT-Logo-PNG-HD-Quality.png" alt="AT&T Logo" style="width:250px; height:auto;">
+
        alt="imagen" style="width:250px; height:auto;">
   <br>
   ¡BUSCA EL QUE MÁS TE GUSTE!
