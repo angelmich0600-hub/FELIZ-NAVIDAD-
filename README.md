@@ -611,8 +611,8 @@ const equipos = [
 {
   nombre: 'Honor X8C BDL Earbuds X7i Morado Nube',
   imagen: 'https://www.honor.com/content/dam/honor/cl/product-list/smartphone/honor-x8c/honor-x8c-p.png',
-  precio: '—',
-  plan: '—',
+  precio: '$948 Mensual',
+  plan: 'Plata a 24 meses con 35% de engache.',
   caracteristicas: [
     'Incluye audífonos X7i',
     'Pantalla 6.8" FHD+',
@@ -696,8 +696,8 @@ const equipos = [
 {
   nombre: 'Motorola Moto G05 Verde  2pz',
   imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/170403/MotoG05-VerdeProfundo-Hero.png?v=638681517847370000',
-  precio: '—',
-  plan: '—',
+  precio: '$497 Mensual',
+  plan: 'Azul 1 a 24 Meses SIN ENGACHE',
   caracteristicas: [
     'Pantalla 6.5" HD+',
     'Cámara 16 MP',
@@ -713,8 +713,8 @@ const equipos = [
 {
   nombre: 'Motorola Moto G15 Gris',
   imagen: 'https://cdn5.coppel.com/mkp/74625726-1.jpg',
-  precio: '—',
-  plan: '—',
+  precio: '$515 Mensual',
+  plan: 'Azul 1 a 24 meses con 35% de enganche',
   caracteristicas: [
     'Pantalla 6.7" 120Hz',
     'Cámara 50 MP OIS',
@@ -730,8 +730,8 @@ const equipos = [
 {
   nombre: 'Motorola Moto G15 Verde',
   imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/170371/MotoG15-Verde-Hero.png?v=638680034078200000',
-  precio: '—',
-  plan: '—',
+  precio: '$515 Mensual',
+  plan: 'Azul 1 a 24 meses con 35% de enganche',
   caracteristicas: [
     'Pantalla 6.7" FHD+',
     'Cámara 50 MP',
@@ -747,8 +747,8 @@ const equipos = [
 {
   nombre: 'Motorola Moto G24 Lavanda',
   imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/m/o/moto_g24_lavanda_both.png',
-  precio: '—',
-  plan: '—',
+  precio: '$500 Mensual',
+  plan: 'Azul 1 a 24 meses SIN ENGACHE',
   caracteristicas: [
     'Pantalla 6.6" HD+ 90Hz',
     'Procesador Helio G85',
@@ -764,8 +764,8 @@ const equipos = [
 {
   nombre: 'Motorola Moto G56 5G Azul  2pz',
   imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/171753-800-auto?v=638832717390770000&width=800&height=auto&aspect=true',
-  precio: '—',
-  plan: '—',
+  precio: '$769 Mensual',
+  plan: 'AZUL 3 a 24 meses con 35% de engache',
   caracteristicas: [
     'Pantalla 6.7" 120Hz',
     'Cámara 50 MP',
@@ -781,8 +781,8 @@ const equipos = [
 {
   nombre: 'Motorola Moto G56 5G Gris  2pz',
   imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/m/o/motog56_gris_dual.png',
-  precio: '—',
-  plan: '—',
+  precio: '$769 Mensual',
+  plan: 'AZUL 3 a 24 meses con 35% de engache',
   caracteristicas: [
     'Pantalla FHD+ 120Hz',
     'Procesador Snapdragon 4 Gen 2',
@@ -798,8 +798,8 @@ const equipos = [
 {
   nombre: 'Oppo A40 4G Lila  2pz',
   imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/dfb1fdb7a1cc7d82dc65a70ab5260406/t/m/tmlmxopopa40li00.png',
-  precio: '—',
-  plan: '—',
+  precio: '$500 Mensual',
+  plan: 'Azul 1 a 24 meses con 35% de engache.',
   caracteristicas: [
     'Pantalla 6.56" LCD',
     'Cámara 50 MP',
@@ -815,8 +815,8 @@ const equipos = [
 {
   nombre: 'Oppo A5 Pro 5G BDL Enco Buds 3 Café',
   imagen: 'https://m.media-amazon.com/images/I/61ctBlGwlJL.jpg',
-  precio: '—',
-  plan: '—',
+  precio: '$945 Mensual',
+  plan: 'Plata a 24 meses con el 35% de engache.',
   caracteristicas: [
     'Pantalla 6.7" AMOLED',
     'Cámara 64 MP',
@@ -832,8 +832,8 @@ const equipos = [
 {
   nombre: 'Oppo Find X8 Pro 5G Negro Grafito',
   imagen: 'https://miphone.com.mx/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-28-a-las-9.50.54.png',
-  precio: '—',
-  plan: '—',
+  precio: '$1,545 Mensual',
+  plan: 'Platino a 30 meses con el 35% de enganche.',
   caracteristicas: [
     'Pantalla 6.82" AMOLED 120Hz',
     'Cámara 50 MP Hasselblad',
@@ -847,27 +847,10 @@ const equipos = [
 },
 
 {
-  nombre: 'PROXIMAMENTE',
-  imagen: '',
-  precio: '—',
-  plan: '—',
-  caracteristicas: [
-    'Pantalla 6.7" AMOLED',
-    'Cámara 64 MP',
-    'Procesador Snapdragon 7 Gen 2',
-    'Batería 5000 mAh',
-    'Carga 80W',
-    'Incluye audífonos',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
   nombre: 'Oppo Reno14 BDL Headphones Verde',
   imagen: 'https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/2005611050633.jpg?scale=500&qlty=75',
-  precio: '—',
-  plan: '—',
+  precio: '$1,255 Mensual',
+  plan: 'Black a 24 meses con el 35% de engache.',
   caracteristicas: [
     'Pantalla AMOLED 120Hz',
     'Cámara 64 MP',
