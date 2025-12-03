@@ -1,37 +1,54 @@
 
 
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo de Equipos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Equipos | AT&T ZAZIL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
-   🎄 ESTILO GENERAL – NAVIDEÑO + MODERNO
-   ============================================================ */
+    🎁 GENERAL Y FONDO
+    ============================================================ */
+:root {
+    /* Paleta de colores temáticos */
+    --color-primary: #1a1a1a;        /* Fondo oscuro de tarjeta */
+    --color-secondary: #00aaff;      /* Azul neón/brillo principal */
+    --color-accent: #ff004c;         /* Rojo de acento */
+    --color-gold: #ffd700;           /* Dorado para precios/hover */
+    --color-text-light: #f0f0f0;     /* Texto claro */
+    --color-plan: #ffe14b;           /* Amarillo para plan */
+    --color-precio: #00ff72;         /* Verde para precio */
+}
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: url("https://w.wallhaven.cc/full/vq/wallhaven-vqvz9m.png") no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
+    color: var(--color-text-light);
+    line-height: 1.6;
+    min-height: 100vh; /* Asegura que el body cubra toda la altura */
+    
+    /* Fondo con Opacidad Reducida (más visible) */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), /* Ajustado a 0.25 */
+        url("http://w.wallhaven.cc/full/eo/wallhaven-eo6zwo.jpg");
 
-/* Contenedor general */
-.contenedor, 
-.buscador-container {
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* ============================================================
-   ❄️ EFECTO DE NIEVE
-   ============================================================ */
+    ❄️ EFECTO DE NIEVE (Optimizado)
+    ============================================================ */
 .snowflake {
     position: fixed;
     top: -10px;
-    color: white;
+    color: var(--color-text-light);
     user-select: none;
     opacity: 0.8;
     animation: caer 8s linear infinite;
@@ -42,77 +59,114 @@ body {
     100% { transform: translateY(110vh) rotate(360deg); }
 }
 
+
 /* ============================================================
-   🎅 ENCABEZADO
-   ============================================================ */
-h1 {
+    🎅 ENCABEZADO
+    ============================================================ */
+.encabezado {
     text-align: center;
-    margin-top: 30px;
-    font-size: 2.8rem;
-    color: #fff;
-    text-shadow: 0 0 10px red, 0 0 20px gold;
+    padding: 30px 20px 0;
+}
+
+.encabezado h1 {
+    font-family: "Playfair Display", serif; /* Fuente más elegante para el título */
+    font-size: clamp(1.8rem, 5vw, 3rem); /* Tamaño responsivo */
+    margin: 0;
+    color: var(--color-text-light);
+    /* Sombra de neón navideña (Rojo y Oro) */
+    text-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-gold);
+}
+
+.encabezado p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 5px;
 }
 
 /* ============================================================
-   🔎 BUSCADOR
-   ============================================================ */
+    🔎 BUSCADOR (Sticky y Transparente)
+    ============================================================ */
 .buscador-container {
     position: sticky;
     top: 0;
     padding: 15px 0;
     z-index: 50;
-    background: rgba(17,17,17,0.95);
-    border-bottom: 1px solid #fff;
-    backdrop-filter: blur(6px);
+    /* Fondo con transparencia y desenfoque (Efecto "vidrio esmerilado") */
+    background: rgba(17, 17, 17, 0.85); /* Opacidad ligeramente reducida */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde más sutil */
+    backdrop-filter: blur(8px); /* Blur aumentado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra para resaltar */
 }
 
 #buscador {
-    width: 80%;
+    width: clamp(250px, 80%, 600px); /* Ancho más controlado */
     display: block;
     margin: auto;
-    padding: 12px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    background: #222;
-    border: 1px solid #fff;
-    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 25px; /* Bordes más redondeados */
+    background: #333;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde más sutil */
+    color: var(--color-text-light);
     transition: 0.3s;
 }
+
+#buscador::placeholder {
+    color: #aaa;
+}
+
 #buscador:focus {
     outline: none;
-    box-shadow: 0 0 12px #00aaff;
+    box-shadow: 0 0 15px var(--color-secondary); /* Brillo azul */
+    background: #444;
 }
 
 /* ============================================================
-   📦 GRID DE TARJETAS
-   ============================================================ */
+    📦 GRID Y CONTENEDOR
+    ============================================================ */
 .contenedor {
+    /* El background y border-radius se mueven a la clase .main-content */
     display: grid;
     padding: 40px 20px;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1400px; /* Ancho máximo para centrar el contenido */
+    margin: 0 auto;
+}
+
+.main-content {
+    /* Nuevo contenedor principal para el fondo oscuro */
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 /* ============================================================
-   🟥 TARJETAS DE EQUIPOS
-   ============================================================ */
+    🟥 TARJETAS DE EQUIPOS (Refinadas)
+    ============================================================ */
 .card {
-    background: #1a1a1a;
+    background: var(--color-primary);
     border-radius: 16px;
     overflow: hidden;
-    border: 2px solid #ff2e2e;
-    box-shadow: 0 0 18px #000, 0 0 20px red;
-    transition: 0.3s;
+    /* Borde temático: sutil azul con sombra navideña (Rojo) */
+    border: 1px solid rgba(0, 170, 255, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 0, 76, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 25px gold;
+    transform: translateY(-5px); /* Movimiento sutil */
+    /* Resplandor dorado elegante al pasar el ratón */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 25px var(--color-gold);
 }
 
 .card img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 250px; /* Altura ligeramente aumentada */
+    object-fit: contain; /* Mejor para imágenes de producto (no se recortan) */
+    background: #0d0d0d; /* Fondo muy oscuro para el área de imagen */
     cursor: pointer;
     transition: 0.2s;
 }
@@ -122,115 +176,145 @@ h1 {
     padding: 20px;
 }
 .info h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 0 0 8px;
-    color: #00ccff;
+    color: var(--color-secondary);
 }
 
 /* Precios y planes */
 .precio {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 5px 0;
-    color: #00ff72;
+    font-size: 1.4rem; /* Un poco más grande */
+    font-weight: 700;
+    margin: 8px 0;
+    color: var(--color-precio); /* Verde brillante */
 }
 .plan {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #ffe14b;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--color-plan); /* Amarillo sutil */
+    font-weight: 600;
 }
 
 /* Listas */
 ul {
     padding-left: 20px;
-    line-height: 1.6;
+    margin-top: 10px;
+    line-height: 1.5;
+    list-style: none; /* Quitamos el estilo por defecto */
+}
+ul li::before {
+    content: "•"; /* Opcional: un punto personalizado */
+    color: var(--color-secondary); /* Color del punto */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 li {
     font-size: 0.95rem;
+    margin-bottom: 4px;
 }
 
 /* ============================================================
-   🔥 MODAL DE IMÁGENES
-   ============================================================ */
+    🔥 MODAL (Capa superior)
+    ============================================================ */
 .modal {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.9); /* Oscurecido para más foco */
+    backdrop-filter: blur(8px);
     justify-content: center;
     align-items: center;
     z-index: 3000;
+    padding: 20px; /* Padding para evitar que la imagen toque los bordes */
 }
 
 .modal-content {
     max-width: 90%;
     max-height: 90%;
     border-radius: 15px;
-    box-shadow: 0 0 25px #00aaff;
+    background: #000; /* Fondo negro para la imagen */
+    box-shadow: 0 0 30px var(--color-secondary);
+    object-fit: contain; /* Asegura que la imagen se vea completa */
 }
 
 .close {
     position: absolute;
     top: 15px;
     right: 30px;
-    font-size: 40px;
+    font-size: 50px; /* Un poco más grande */
     cursor: pointer;
-    color: white;
-    text-shadow: 0 0 10px red;
+    color: var(--color-text-light);
+    text-shadow: 0 0 15px var(--color-accent); /* Sombra roja */
+    transition: 0.3s;
+}
+.close:hover {
+    color: var(--color-accent);
+}
+
+/* ============================================================
+    📱 RESPONSIVE (Móviles)
+    ============================================================ */
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+    .contenedor {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        padding: 20px 10px;
+    }
+    .card img {
+        height: 200px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- ❄️ NIEVE -->
 <div id="snow"></div>
 
-<!-- 🎅 TÍTULO -->
-<h1>
+<header class="encabezado">
+    <h1>CATÁLOGO EXCLUSIVO</h1>
+    <p>SOLO EN AT&T ZAZIL PLAYA DEL CARMEN — ¡BUSCA EL QUE MÁS TE GUSTE!</p>
+</header>
 
-SOLO EN AT&T ZAZIL PLAYA DEL CARMEN 
-
-  <br>
-  ¡BUSCA EL QUE MÁS TE GUSTE!
-</h1>
-
-<!-- 🔎 BUSCADOR -->
 <div class="buscador-container">
-    <input type="text" id="buscador" placeholder="Buscar equipo...">
+    <input type="text" id="buscador" placeholder="Buscar equipo (ej: iPhone 15, Honor, G05)...">
 </div>
 
-<!-- 📦 CONTENEDOR DE TARJETAS -->
-<div class="contenedor" id="contenedor"></div>
+<main class="main-content">
+    <div class="contenedor" id="contenedor"></div>
+</main>
 
-<!-- 🔥 MODAL DE IMÁGENES -->
+
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img id="img01" class="modal-content">
+    <img id="img01" class="modal-content" alt="Imagen ampliada del equipo">
 </div>
 
 <script>
-/* ============================================================
-   📌 LISTA DE EQUIPOS (SIN CAMBIAR)
-   ============================================================ */
+// ============================================================
+// 📌 LISTA DE EQUIPOS (Se mantiene igual, solo se usa 'const' para mayor seguridad)
+// ============================================================
 const equipos = [
-/* AQUI VA TODA TU LISTA ORIGINAL — NO SE CAMBIÓ NADA */
+/* ... TU LISTA DE EQUIPOS ORIGINAL AQUÍ ... */
 {
-  nombre: 'Samsung Galaxy A16 128GB Black 2pz',
-  imagen: 'https://images.samsung.com/is/image/samsung/p6pim/mx/sm-a165mzkaltm/gallery/mx-galaxy-a16-sm-a165-sm-a165mzkaltm-544305569?$Q90_1248_936_F_PNG$',
-  precio: '$766 Mensual',
-  plan: 'AZUL 3 a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.6" FHD+ LCD 90Hz',
-    'Cámara 50 MP + 2 MP + 2 MP',
-    'Procesador MediaTek Helio G80',
-    'Batería 5000 mAh',
-    'Android 14',
-    'RAM 4GB Y 128GB',
-    'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
+  nombre: 'Samsung Galaxy A16 128GB Black 2pz',
+  imagen: 'https://images.samsung.com/is/image/samsung/p6pim/mx/sm-a165mzkaltm/gallery/mx-galaxy-a16-sm-a165-sm-a165mzkaltm-544305569?$Q90_1248_936_F_PNG$',
+  precio: '$766 Mensual',
+  plan: 'AZUL 3 a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.6" FHD+ LCD 90Hz',
+    'Cámara 50 MP + 2 MP + 2 MP',
+    'Procesador MediaTek Helio G80',
+    'Batería 5000 mAh',
+    'Android 14',
+    'RAM 4GB Y 128GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
 },
 
 {
@@ -1104,74 +1188,100 @@ const equipos = [
 ];
 
 
-/* ============================================================
-   📌 FUNCIÓN PARA MOSTRAR EQUIPOS
-   ============================================================ */
-function mostrarEquipos(lista) {
-    const contenedor = document.getElementById("contenedor");
-    contenedor.innerHTML = "";
+// ============================================================
+// 📌 FUNCIÓN PARA MOSTRAR EQUIPOS (USANDO CLONACIÓN DE PLANTILLA - Más eficiente)
+// ============================================================
+const contenedor = document.getElementById("contenedor");
+const placeholderImg = 'https://via.placeholder.com/400x250?text=Sin+Imagen';
 
-    lista.forEach(equipo => {
-        const card = document.createElement("div");
-        card.className = "card";
+function crearCardHTML(equipo) {
+    const imagenSrc = equipo.imagen || placeholderImg;
+    const listaHTML = equipo.caracteristicas.map(c => `<li>${c}</li>`).join("");
 
-        card.innerHTML = `
-            <img src="${equipo.imagen || 'https://via.placeholder.com/400x400?text=Sin+Imagen'}"
-                 alt="${equipo.nombre}"
-                 class="imagen-equipo">
-
+    return `
+        <div class="card">
+            <img src="${imagenSrc}" alt="${equipo.nombre}" class="imagen-equipo" loading="lazy">
             <div class="info">
                 <h2>${equipo.nombre}</h2>
                 <div class="precio">${equipo.precio}</div>
                 <div class="plan">${equipo.plan}</div>
-                <ul>${equipo.caracteristicas.map(c => `<li>${c}</li>`).join("")}</ul>
+                <ul>${listaHTML}</ul>
             </div>
-        `;
-        contenedor.appendChild(card);
-    });
+        </div>
+    `;
 }
 
-/* ============================================================
-   🔍 BUSCADOR
-   ============================================================ */
-document.getElementById("buscador").addEventListener("input", function () {
-    const texto = this.value.toLowerCase();
-    const filtrados = equipos.filter(e => e.nombre.toLowerCase().includes(texto));
+function mostrarEquipos(lista) {
+    // Usamos map y join para construir el HTML de una vez (más rápido que appendChild en un bucle)
+    contenedor.innerHTML = lista.map(crearCardHTML).join("");
+}
+
+// ============================================================
+// 🔍 BUSCADOR (Usa desestructuración moderna)
+// ============================================================
+document.getElementById("buscador").addEventListener("input", function (e) {
+    // Usamos e.target.value en lugar de this.value
+    const texto = e.target.value.toLowerCase();
+    
+    // Filtramos por nombre o características para una búsqueda más robusta
+    const filtrados = equipos.filter(e => {
+        const nombreYMarca = e.nombre.toLowerCase();
+        const caracteristicas = e.caracteristicas.join(" ").toLowerCase();
+        
+        return nombreYMarca.includes(texto) || caracteristicas.includes(texto);
+    });
     mostrarEquipos(filtrados);
 });
 
-/* Mostrar todos al inicio */
+// Mostrar todos al inicio
 mostrarEquipos(equipos);
 
-/* ============================================================
-   🖼️ MODAL DE IMÁGENES
-   ============================================================ */
+
+// ============================================================
+// 🖼️ MODAL DE IMÁGENES (Delegación de eventos centralizada)
+// ============================================================
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("img01");
+const closeModal = document.querySelector(".close");
 
-document.addEventListener("click", e => {
-    if (e.target.classList.contains("imagen-equipo")) {
+// Abrir Modal (Delegación en el contenedor principal)
+contenedor.addEventListener("click", e => {
+    // Usamos el método .closest() para manejar mejor los clicks
+    const img = e.target.closest(".imagen-equipo");
+    if (img) {
         modal.style.display = "flex";
-        modalImg.src = e.target.src;
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
     }
 });
 
-document.querySelector(".close").onclick = () => modal.style.display = "none";
-modal.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
+// Cerrar Modal
+closeModal.addEventListener("click", () => modal.style.display = "none");
 
-/* ============================================================
-   ❄️ GENERADOR DE NIEVE
-   ============================================================ */
+// Cerrar al hacer click fuera de la imagen
+modal.addEventListener("click", e => { 
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+
+// ============================================================
+// ❄️ GENERADOR DE NIEVE (Ligeramente optimizado)
+// ============================================================
 function crearNieve() {
-    const snow = document.getElementById("snow");
-    for (let i = 0; i < 25; i++) {
+    const snowContainer = document.getElementById("snow");
+    const numCopos = 30; // Aumentado a 30 para más efecto
+    
+    for (let i = 0; i < numCopos; i++) {
         const copo = document.createElement("div");
         copo.className = "snowflake";
-        copo.textContent = "❄";
+        copo.textContent = "•"; // Símbolo más sutil que ❄ (para elegancia)
         copo.style.left = Math.random() * 100 + "vw";
-        copo.style.animationDelay = Math.random() * 8 + "s";
-        copo.style.fontSize = (10 + Math.random() * 20) + "px";
-        snow.appendChild(copo);
+        copo.style.animationDelay = Math.random() * 10 + "s"; // Delay más largo para distribución
+        copo.style.animationDuration = (8 + Math.random() * 7) + "s"; // Duración variable
+        copo.style.fontSize = (12 + Math.random() * 16) + "px"; // Tamaño sutil
+        snowContainer.appendChild(copo);
     }
 }
 crearNieve();
