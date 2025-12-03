@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: url("https://w.wallhaven.cc/full/z8/wallhaven-z8moew.jpg") no-repeat center center fixed;
+    background: url("https://w.wallhaven.cc/full/vq/wallhaven-vqvz9m.png") no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
