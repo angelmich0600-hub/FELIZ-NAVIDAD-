@@ -335,7 +335,7 @@ const equipos = [
 },
 
 {
-  nombre: 'Apple iPhone 13 128GB Negro',
+  nombre: 'Apple iPhone 13 128GB Negro   3 PZ',
   imagen: 'https://macstoreonline.com.mx/img/sku/iphone474_FZ.jpg',
   precio: '$1,343 Mensual',
   plan: 'Platino a 30 meses con 35% de enganche.',
@@ -1099,7 +1099,44 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
-
+  {
+    nombre: 'Xiaomi Redmi 15 128GB BLACK  2 pz',
+    imagen: 'https://tienda.movistar.com.mx/pub/media/catalog/product/r/e/redmi15_dual.png',
+    precio: '—',
+    plan: '—',
+    caracteristicas: [
+      'Pantalla 6.9&quot; FHD+ (144 Hz)',
+      'Cámara trasera 50 MP',
+      'Cámara frontal 8 MP',
+      'Batería 7000 mAh',
+      'Procesador Snapdragon 6s Gen 3',
+      'Android 15 / HyperOS 2',
+      'Dual SIM',
+      'Carga rápida 33W (carga inversa 18W)',
+      'Resistencia polvo/agua IP64',
+      'SEGURO DE PROTECCIÓN',
+      'CONTROL DE DATOS'
+    ]
+  },
+      {
+    nombre: 'Xiaomi Redmi 15C 128GB blue 3 pz',
+    imagen: 'https://i02.appmifile.com/755_item_mx/28/08/2025/47aad66ef05f71a0d6db2817eb746bbe.png',
+    precio: '—',
+    plan: '—',
+    caracteristicas: [
+      'Pantalla 6.9&quot; HD+ (120 Hz)',
+      'Cámara trasera 50 MP',
+      'Cámara frontal 8 MP',
+      'Batería 6000 mAh',
+      'Procesador MediaTek Helio G81-Ultra',
+      'Android 15 / HyperOS 2',
+      'Dual SIM + microSD',
+      'Carga rápida 33W',
+      'Resistencia polvo/agua IP64',
+      'SEGURO DE PROTECCIÓN',
+      'CONTROL DE DATOS'
+    ]
+  },
 {
   nombre: 'Xiaomi Redmi 14C 128GB Black',
   imagen: 'https://i02.appmifile.com/731_item_mx/16/10/2024/5d584c744ba18c57182e94f2df77704f.png',
