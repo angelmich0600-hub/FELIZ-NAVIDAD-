@@ -897,23 +897,6 @@ const equipos = [
 },
 
 {
-  nombre: 'Oppo A5 Pro 5G BDL Enco Buds 3 Café',
-  imagen: 'https://m.media-amazon.com/images/I/61ctBlGwlJL.jpg',
-  precio: '$945 Mensual',
-  plan: 'Plata a 24 meses con el 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.7" AMOLED',
-    'Cámara 64 MP',
-    'Procesador Dimensity 7050',
-    '5G',
-    'Batería 5000 mAh',
-    'Incluye Enco Buds 3',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
   nombre: 'Oppo Find X8 Pro 5G Negro Grafito',
   imagen: 'https://miphone.com.mx/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-28-a-las-9.50.54.png',
   precio: '$1,545 Mensual',
