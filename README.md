@@ -301,39 +301,6 @@ li {
 const equipos = [
 /* ... TU LISTA DE EQUIPOS ORIGINAL AQUÍ ... */
 {
-  nombre: 'Samsung Galaxy A16 128GB Black 2pz',
-  imagen: 'https://images.samsung.com/is/image/samsung/p6pim/mx/sm-a165mzkaltm/gallery/mx-galaxy-a16-sm-a165-sm-a165mzkaltm-544305569?$Q90_1248_936_F_PNG$',
-  precio: '$766 Mensual',
-  plan: 'AZUL 3 a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.6" FHD+ LCD 90Hz',
-    'Cámara 50 MP + 2 MP + 2 MP',
-    'Procesador MediaTek Helio G80',
-    'Batería 5000 mAh',
-    'Android 14',
-    'RAM 4GB Y 128GB',
-    'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Apple iPhone 15 128GB Negro',
-  imagen: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-black-select-202309?wid=940&hei=1112&fmt=png-alpha&.v=1692925511738',
-  precio: '$1,253 Mensual',
-  plan: 'Black a 36 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.1" Super Retina XDR',
-    'Cámara 48 MP + 12 MP',
-    'Procesador Apple A16 Bionic',
-    'USB-C',
-    'Batería hasta 26 horas de video',
-    'Dynamic Island',
-    'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-{
   nombre: 'Apple iPhone 13 128GB Negro   3 PZ',
   imagen: 'https://macstoreonline.com.mx/img/sku/iphone474_FZ.jpg',
   precio: '$1,343 Mensual',
@@ -519,6 +486,7 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
+
 {
   nombre: 'Google Pixel 9A 128GB Porcelain 2pz',
   imagen: 'https://revendo.ch/cdn/shop/files/google-pixel-9a-google-tensor-g4-4-nm-9a-porcelain-beige-guenstig-gebraucht-kaufen-00.png?v=1746726576',
@@ -738,6 +706,7 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
+
 {
   nombre: 'Xiaomi 15T BDL Sound Outdoor Black  2pz',
   imagen: 'https://xiaomistore.com.hn/wp-content/uploads/Combo_Nov_HN_Xiaomi_15T_Pro.webp',
