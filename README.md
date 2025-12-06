@@ -333,7 +333,6 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
-
 {
   nombre: 'Apple iPhone 13 128GB Negro   3 PZ',
   imagen: 'https://macstoreonline.com.mx/img/sku/iphone474_FZ.jpg',
@@ -346,6 +345,23 @@ const equipos = [
     'Batería hasta 19 horas de video',
     'Face ID',
     'iOS 17 / 18 compatible',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Apple iPhone 15 128GB Negro',
+  imagen: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-black-select-202309?wid=940&hei=1112&fmt=png-alpha&.v=1692925511738',
+  precio: '$1,253 Mensual',
+  plan: 'Black a 36 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.1" Super Retina XDR',
+    'Cámara 48 MP + 12 MP',
+    'Procesador Apple A16 Bionic',
+    'USB-C',
+    'Batería hasta 26 horas de video',
+    'Dynamic Island',
     'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
@@ -367,7 +383,6 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
-
 
 {
   nombre: 'Apple iPhone 16E 128GB Negro',
@@ -438,6 +453,90 @@ const equipos = [
 },
 
 {
+  nombre: 'iPhone 16 128GB Negro',
+  imagen: 'https://clevercel.mx/cdn/shop/files/16BLACK_8e3a1f31-b363-4287-96b8-bc21ce211535.png?v=1762441710&width=1214',
+  precio: '$1,215',
+  plan: 'BLACK A 24 MESES CON $4,725 DE ENGANCHE*',
+  caracteristicas: [
+    'Pantalla 6.1" OLED',
+    'Cámara 48 MP',
+    'Chip A18',
+    'Batería de larga duración',
+    'USB-C',
+    'iOS 18',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'iPhone 16 Pro 128GB Titanio Negro',
+  imagen: 'https://macstoreonline.com.mx/img/sku/iphone719_FZ.jpg',
+  precio: '$1,310',
+  plan: 'ORO A 24 MESES CON $7,251 DE ENGANCHE',
+  caracteristicas: [
+    'Pantalla 6.3" ProMotion',
+    'Titanio Negro',
+    'A18 Pro',
+    'Cámara 48 MP Pro',
+    'USB-C Thunderbolt',
+    'iOS 18',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'iPhone 16 Pro Max 256GB Titanio Blanco',
+  imagen: 'https://macstoreonline.com.mx/img/sku/iphone732_FZ.jpg',
+  precio: '$1,521',
+  plan: 'BLACK A 24 MESES CON $8,697 DE ENGACHE',
+  caracteristicas: [
+    'Pantalla 6.9" ProMotion',
+    'Cámara Pro Max 48 MP',
+    'Chip A18 Pro Max',
+    'Titanio Blanco',
+    'Batería grande',
+    'iOS 18',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'iPhone 16 Pro Max 256GB Titanio Negro  3pz',
+  imagen: 'https://tienda.movistar.com.mx/pub/media/catalog/product/i/p/iphone16promaxnegro.png',
+  precio: '$1,521',
+  plan: 'BLACK A 24 MESES CON $8,697 DE ENGACHE',
+  caracteristicas: [
+    'Pantalla 6.9" 120Hz',
+    'Cámara triple 48 MP',
+    'Titanio Black Edition',
+    'A18 Pro Max',
+    'USB-C',
+    'iOS 18',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+{
+  nombre: 'Google Pixel 9A 128GB Porcelain 2pz',
+  imagen: 'https://revendo.ch/cdn/shop/files/google-pixel-9a-google-tensor-g4-4-nm-9a-porcelain-beige-guenstig-gebraucht-kaufen-00.png?v=1746726576',
+  precio: '$1,225 Mensual',
+  plan: 'Black a 24 meses con 35% de enganche.',
+  caracteristicas: [
+    'Pantalla 6.1" OLED',
+    'Cámara 12 MP Pixel Camera',
+    'Procesador Tensor G4',
+    'Batería 4300 mAh',
+    'Android 15',
+    'IA integrada',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
   nombre: 'Google Pixel 10 128GB Obsidian 2pz',
   imagen: 'https://d1erhn8sljv386.cloudfront.net/Pf4XhY31nJJRYg6KszdmfEGsYF4=/fit-in/800x0/https://s3.amazonaws.com/lmbucket0/media/product/t-mobile-google-pixel-10-backimage-obsidian.20fc6eaa6f7954fe2990acefc6b4aeda509905e2.png',
   precio: '$1,425 Mensual',
@@ -466,7 +565,7 @@ const equipos = [
     'Batería 5300 mAh',
     'Carga 45W',
     'Android 16',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -483,7 +582,7 @@ const equipos = [
     'Batería 5500 mAh',
     'Android 16',
     '7 años de parches',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -500,436 +599,10 @@ const equipos = [
     'Batería 5500 mAh',
     'Carga rápida 50W',
     'Android 16',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
-
-{
-  nombre: 'Google Pixel 9A 128GB Porcelain 2pz',
-  imagen: 'https://revendo.ch/cdn/shop/files/google-pixel-9a-google-tensor-g4-4-nm-9a-porcelain-beige-guenstig-gebraucht-kaufen-00.png?v=1746726576',
-  precio: '$1,225 Mensual',
-  plan: 'Black a 24 meses con 35% de enganche.',
-  caracteristicas: [
-    'Pantalla 6.1" OLED',
-    'Cámara 12 MP Pixel Camera',
-    'Procesador Tensor G4',
-    'Batería 4300 mAh',
-    'Android 15',
-    'IA integrada',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor 400 BDL Headphone Black  3 pz',
-  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/b/u/bundle.png',
-  precio: '$1,175 Mensual',
-  plan: 'Black a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Audífonos inalámbricos',
-    'Cancelación de ruido',
-    'Conectividad Bluetooth 5.3',
-    'Autonomía 30 horas',
-    'Carga USB-C',
-    'Micrófono dual',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor 400 BDL Headphone Gold  3pz',
-  imagen: 'https://www.dxomark.com/wp-content/uploads/medias/post-184771/Honor-400-Featured-image.png',
-  precio: '$1,175 Mensual',
-  plan: 'Black a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Edición dorada premium',
-    'Cancelación activa',
-    'Bluetooth 5.3',
-    'Autonomía 30h',
-    'Diseño cómodo',
-    'Carga rápida',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor Magic6 Lite Orange',
-  imagen: 'https://www.honor.com/content/dam/honor/es/shop/1560-1170/m6l-1212.png',
-  precio: '$720 Mensual',
-  plan: 'Azul 2 a 36 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla curva 6.78" AMOLED',
-    'Cámara 108 MP',
-    'Procesador Snapdragon 6 Gen 1',
-    'Batería 5300 mAh',
-    'Carga 35W',
-    'RAM 8GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor Magic6 Lite Silver',
-  imagen: 'https://www.honor.com/content/dam/honor/mx/products/smartphone/honor-magic6-lite/imgs/sec4-new/sec4-phone-bg-mb.png',
-  precio: '$720 Mensual',
-  plan: 'Azul 2 a 36 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla AMOLED 120Hz',
-    'Cámara 108 MP',
-    'Batería 5300 mAh',
-    'Snapdragon 6 Gen 1',
-    'MagicOS 8',
-    'RAM 8GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor Magic7 Lite BDL Headphones 5G Jcyan  2pz',
-  imagen: 'https://tiendahonor.cr/wp-content/uploads/2025/01/MKT_Bruce_Identity-Pictures_%E9%9D%92%E8%89%B2Cyan_%E7%BA%AF%E8%83%8CBack_RGB_PNG_20240814-2.png',
-  precio: '$970 Mensual',
-  plan: 'Plata a 30 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla AMOLED 120Hz',
-    'Cámara 108 MP',
-    'Snapdragon 7s Gen 2',
-    'Batería 5100 mAh',
-    '5G',
-    'Incluye audífonos',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor X5C Plus Meteor Silver',
-  imagen: 'https://texnohome.az/image/cache/catalog/21.10.2025/cdn-cgi-39-1200x630.png',
-  precio: '$495 Mensual',
-  plan: 'Azul 1 a 24 meses SIN ENGANCHE.',
-  caracteristicas: [
-    'Pantalla 6.56" HD+',
-    'Cámara 50 MP',
-    'Procesador Octa-Core',
-    'Batería 5000 mAh',
-    'Android 14',
-    'Almacenamiento 128GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor X5C Plus Ocean Cyan',
-  imagen: 'https://catalog.sixty60.co.za/v2/files/68e90439ed336b2f66207bbe?width=1440&height=1440',
-  precio: '$495 Mensual',
-  plan: 'Azul 1 a 24 meses SIN ENGANCHE.',
-  caracteristicas: [
-    'Pantalla 6.56" HD+',
-    'Cámara 50 MP',
-    'Batería 5000 mAh',
-    'Android 14',
-    'Procesador Octa-Core',
-    'Diseño resistente',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor X6C Cyan  4pz',
-  imagen: 'https://www.honor.com/content/dam/honor/common/product-list/product-series/honor-x6c/honor-x6c-g-list.png',
-  precio: '$601 Mensual',
-  plan: 'Azul 2 con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.56" IPS',
-    'Cámara 50 MP',
-    'Procesador MediaTek G36',
-    'Batería 5200 mAh',
-    'RAM 4GB',
-    'Android 14',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor X7D Desert Gold',
-  imagen: 'https://www.honor.com/content/dam/honor/common/product-list/product-series/honor-x7d/honor-x7d-gold-list.png',
-  precio: '$770 Mensual',
-  plan: 'Azul 3 a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.74" 90Hz',
-    'Cámara 50 MP',
-    'Procesador Snapdragon 480+',
-    'Batería 5000 mAh',
-    'Android 14',
-    'Carga rápida 22W',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor X7D Velvet Black  2pz',
-  imagen: 'https://miamicenters.com/wp-content/uploads/2025/09/x7dd-blackk.png',
-  precio: '$770 Mensual',
-  plan: 'Azul 3 a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.74" HD+',
-    'Cámara 50 MP',
-    '5G',
-    'Batería 5000 mAh',
-    'Android 14',
-    'Diseño elegante',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Honor X8C BDL Earbuds X7i Morado Nube',
-  imagen: 'https://www.honor.com/content/dam/honor/cl/product-list/smartphone/honor-x8c/honor-x8c-p.png',
-  precio: '$948 Mensual',
-  plan: 'Plata a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Incluye audífonos X7i',
-    'Pantalla 6.8" FHD+',
-    'Cámara 108 MP',
-    'Batería 5000 mAh',
-    'Carga 30W',
-    'RAM 8GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'iPhone 16 128GB Negro',
-  imagen: 'https://clevercel.mx/cdn/shop/files/16BLACK_8e3a1f31-b363-4287-96b8-bc21ce211535.png?v=1762441710&width=1214',
-  precio: '$1,215',
-  plan: 'BLACK A 24 MESES CON $4,725 DE ENGANCHE*',
-  caracteristicas: [
-    'Pantalla 6.1" OLED',
-    'Cámara 48 MP',
-    'Chip A18',
-    'Batería de larga duración',
-    'USB-C',
-    'iOS 18',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'iPhone 16 Pro 128GB Titanio Negro',
-  imagen: 'https://macstoreonline.com.mx/img/sku/iphone719_FZ.jpg',
-  precio: '$1,310',
-  plan: 'ORO A 24 MESES CON $7,251 DE ENGANCHE',
-  caracteristicas: [
-    'Pantalla 6.3" ProMotion',
-    'Titanio Negro',
-    'A18 Pro',
-    'Cámara 48 MP Pro',
-    'USB-C Thunderbolt',
-    'iOS 18',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'iPhone 16 Pro Max 256GB Titanio Blanco',
-  imagen: 'https://macstoreonline.com.mx/img/sku/iphone732_FZ.jpg',
-  precio: '$1,521',
-  plan: 'BLACK A 24 MESES CON $8,697 DE ENGACHE',
-  caracteristicas: [
-    'Pantalla 6.9" ProMotion',
-    'Cámara Pro Max 48 MP',
-    'Chip A18 Pro Max',
-    'Titanio Blanco',
-    'Batería grande',
-    'iOS 18',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'iPhone 16 Pro Max 256GB Titanio Negro  3pz',
-  imagen: 'https://tienda.movistar.com.mx/pub/media/catalog/product/i/p/iphone16promaxnegro.png',
-  precio: '$1,521',
-  plan: 'BLACK A 24 MESES CON $8,697 DE ENGACHE',
-  caracteristicas: [
-    'Pantalla 6.9" 120Hz',
-    'Cámara triple 48 MP',
-    'Titanio Black Edition',
-    'A18 Pro Max',
-    'USB-C',
-    'iOS 18',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Motorola Moto G05 Verde  2pz',
-  imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/170403/MotoG05-VerdeProfundo-Hero.png?v=638681517847370000',
-  precio: '$497 Mensual',
-  plan: 'Azul 1 a 24 Meses SIN ENGACHE',
-  caracteristicas: [
-    'Pantalla 6.5" HD+',
-    'Cámara 16 MP',
-    'Procesador Unisoc T606',
-    'Batería 5000 mAh',
-    'RAM 4GB',
-    'Android 14',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Motorola Moto G15 Gris',
-  imagen: 'https://cdn5.coppel.com/mkp/74625726-1.jpg',
-  precio: '$515 Mensual',
-  plan: 'Azul 1 a 24 meses con 35% de enganche',
-  caracteristicas: [
-    'Pantalla 6.7" 120Hz',
-    'Cámara 50 MP OIS',
-    'Snapdragon 6 Gen 1',
-    'Batería 5000 mAh',
-    'Carga 30W',
-    'Android 15',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Motorola Moto G15 Verde',
-  imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/170371/MotoG15-Verde-Hero.png?v=638680034078200000',
-  precio: '$515 Mensual',
-  plan: 'Azul 1 a 24 meses con 35% de enganche',
-  caracteristicas: [
-    'Pantalla 6.7" FHD+',
-    'Cámara 50 MP',
-    '5G',
-    'Snapdragon 6 Gen 1',
-    '5000 mAh',
-    'Android 15',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Motorola Moto G24 Lavanda',
-  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/m/o/moto_g24_lavanda_both.png',
-  precio: '$500 Mensual',
-  plan: 'Azul 1 a 24 meses SIN ENGACHE',
-  caracteristicas: [
-    'Pantalla 6.6" HD+ 90Hz',
-    'Procesador Helio G85',
-    'Cámara 50 MP',
-    'Batería 5000 mAh',
-    'Android 14',
-    'RAM 4GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Motorola Moto G56 5G Azul  2pz',
-  imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/171753-800-auto?v=638832717390770000&width=800&height=auto&aspect=true',
-  precio: '$769 Mensual',
-  plan: 'AZUL 3 a 24 meses con 35% de engache',
-  caracteristicas: [
-    'Pantalla 6.7" 120Hz',
-    'Cámara 50 MP',
-    'Procesador Snapdragon 4 Gen 2',
-    'Batería 5000 mAh',
-    '5G',
-    'Android 14',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Motorola Moto G56 5G Gris  2pz',
-  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/m/o/motog56_gris_dual.png',
-  precio: '$769 Mensual',
-  plan: 'AZUL 3 a 24 meses con 35% de engache',
-  caracteristicas: [
-    'Pantalla FHD+ 120Hz',
-    'Procesador Snapdragon 4 Gen 2',
-    'Cámara 50 MP',
-    '5000 mAh',
-    'USB-C',
-    'Android 14',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Oppo A40 4G Lila  2pz',
-  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/dfb1fdb7a1cc7d82dc65a70ab5260406/t/m/tmlmxopopa40li00.png',
-  precio: '$500 Mensual',
-  plan: 'Azul 1 a 24 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.56" LCD',
-    'Cámara 50 MP',
-    'Procesador Helio G35',
-    'Batería 5000 mAh',
-    'ColorOS 14',
-    'RAM 4GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Oppo Find X8 Pro 5G Negro Grafito',
-  imagen: 'https://miphone.com.mx/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-28-a-las-9.50.54.png',
-  precio: '$1,545 Mensual',
-  plan: 'Platino a 30 meses con el 35% de enganche.',
-  caracteristicas: [
-    'Pantalla 6.82" AMOLED 120Hz',
-    'Cámara 50 MP Hasselblad',
-    'Snapdragon 8 Gen 4',
-    'Batería 5400 mAh',
-    'Carga 100W',
-    'RAM 12GB',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Oppo Reno14 BDL Headphones Verde',
-  imagen: 'https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/2005611050633.jpg?scale=500&qlty=75',
-  precio: '$1,255 Mensual',
-  plan: 'Black a 24 meses con el 35% de engache.',
-  caracteristicas: [
-    'Pantalla AMOLED 120Hz',
-    'Cámara 64 MP',
-    '5G',
-    'Snapdragon 7 Gen 2',
-    '5000 mAh',
-    'Audífonos incluidos',
-        'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
 {
   nombre: 'Samsung Galaxy A07 Black',
   imagen: 'https://images.samsung.com/is/image/samsung/p6pim/mx/sm-a075mzkaltm/gallery/mx-galaxy-a07-sm-a075-569913-sm-a075mzkaltm-thumb-549785654',
@@ -942,7 +615,24 @@ const equipos = [
     'Batería 5000 mAh',
     'Android 14',
     'Diseño elegante',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Samsung Galaxy A16 128GB Black 2pz',
+  imagen: 'https://images.samsung.com/is/image/samsung/p6pim/mx/sm-a165mzkaltm/gallery/mx-galaxy-a16-sm-a165-sm-a165mzkaltm-544305569?$Q90_1248_936_F_PNG$',
+  precio: '$766 Mensual',
+  plan: 'AZUL 3 a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.6" FHD+ LCD 90Hz',
+    'Cámara 50 MP + 2 MP + 2 MP',
+    'Procesador MediaTek Helio G80',
+    'Batería 5000 mAh',
+    'Android 14',
+    'RAM 4GB Y 128GB',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -959,7 +649,7 @@ const equipos = [
     '5000 mAh',
     'OneUI 6',
     'Almacenamiento 128GB',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -976,7 +666,7 @@ const equipos = [
     'Batería 5000 mAh',
     '5G',
     'Android 14',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -993,7 +683,7 @@ const equipos = [
     'Batería 5000 mAh',
     'Carga 25W',
     'RAM 8GB',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1010,7 +700,7 @@ const equipos = [
     'Batería 4800 mAh',
     'Android 16',
     'Carga 45W',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1027,7 +717,7 @@ const equipos = [
     'Batería 4500 mAh',
     'Carga rápida',
     'Diseño premium',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1044,11 +734,10 @@ const equipos = [
     'Cámara 50 MP',
     'Batería 4000 mAh',
     'Carga rápida 25W',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
-
 {
   nombre: 'Xiaomi 15T BDL Sound Outdoor Black  2pz',
   imagen: 'https://xiaomistore.com.hn/wp-content/uploads/Combo_Nov_HN_Xiaomi_15T_Pro.webp',
@@ -1061,7 +750,7 @@ const equipos = [
     'Snapdragon 7s Gen 2',
     'Batería 5000 mAh',
     'Carga 67W',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1078,7 +767,7 @@ const equipos = [
     'Batería 5000 mAh',
     'Carga 67W',
     'MIUI 15',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1095,48 +784,11 @@ const equipos = [
     'Snapdragon 8 Gen 3',
     'Carga 120W',
     'RAM 12GB',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
-  {
-    nombre: 'Xiaomi Redmi 15 128GB BLACK  2 pz',
-    imagen: 'https://tienda.movistar.com.mx/pub/media/catalog/product/r/e/redmi15_dual.png',
-    precio: '—',
-    plan: '—',
-    caracteristicas: [
-      'Pantalla 6.9&quot; FHD+ (144 Hz)',
-      'Cámara trasera 50 MP',
-      'Cámara frontal 8 MP',
-      'Batería 7000 mAh',
-      'Procesador Snapdragon 6s Gen 3',
-      'Android 15 / HyperOS 2',
-      'Dual SIM',
-      'Carga rápida 33W (carga inversa 18W)',
-      'Resistencia polvo/agua IP64',
-      'SEGURO DE PROTECCIÓN',
-      'CONTROL DE DATOS'
-    ]
-  },
-      {
-    nombre: 'Xiaomi Redmi 15C 128GB blue 3 pz',
-    imagen: 'https://i02.appmifile.com/755_item_mx/28/08/2025/47aad66ef05f71a0d6db2817eb746bbe.png',
-    precio: '—',
-    plan: '—',
-    caracteristicas: [
-      'Pantalla 6.9&quot; HD+ (120 Hz)',
-      'Cámara trasera 50 MP',
-      'Cámara frontal 8 MP',
-      'Batería 6000 mAh',
-      'Procesador MediaTek Helio G81-Ultra',
-      'Android 15 / HyperOS 2',
-      'Dual SIM + microSD',
-      'Carga rápida 33W',
-      'Resistencia polvo/agua IP64',
-      'SEGURO DE PROTECCIÓN',
-      'CONTROL DE DATOS'
-    ]
-  },
+
 {
   nombre: 'Xiaomi Redmi 14C 128GB Black',
   imagen: 'https://i02.appmifile.com/731_item_mx/16/10/2024/5d584c744ba18c57182e94f2df77704f.png',
@@ -1149,7 +801,7 @@ const equipos = [
     'Procesador Helio G36',
     'Android 14',
     'Dual SIM',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1166,7 +818,7 @@ const equipos = [
     'Cámara 13 MP',
     'MIUI 15',
     'Almacenamiento 128GB',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1183,7 +835,47 @@ const equipos = [
     'Batería 5000 mAh',
     'Carga 33W',
     'MIUI 15',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Xiaomi Redmi 15 128GB BLACK  2 pz',
+  imagen: 'https://tienda.movistar.com.mx/pub/media/catalog/product/r/e/redmi15_dual.png',
+  precio: '—',
+  plan: '—',
+  caracteristicas: [
+    'Pantalla 6.9" FHD+ (144 Hz)',
+    'Cámara trasera 50 MP',
+    'Cámara frontal 8 MP',
+    'Batería 7000 mAh',
+    'Procesador Snapdragon 6s Gen 3',
+    'Android 15 / HyperOS 2',
+    'Dual SIM',
+    'Carga rápida 33W (carga inversa 18W)',
+    'Resistencia polvo/agua IP64',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Xiaomi Redmi 15C 128GB blue 3 pz',
+  imagen: 'https://i02.appmifile.com/755_item_mx/28/08/2025/47aad66ef05f71a0d6db2817eb746bbe.png',
+  precio: '—',
+  plan: '—',
+  caracteristicas: [
+    'Pantalla 6.9" HD+ (120 Hz)',
+    'Cámara trasera 50 MP',
+    'Cámara frontal 8 MP',
+    'Batería 6000 mAh',
+    'Procesador MediaTek Helio G81-Ultra',
+    'Android 15 / HyperOS 2',
+    'Dual SIM + microSD',
+    'Carga rápida 33W',
+    'Resistencia polvo/agua IP64',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
@@ -1200,12 +892,371 @@ const equipos = [
     'Procesador Helio A22',
     'Android 13 Go',
     'RAM 3GB',
-        'SEGURO DE PROTECCIÓN',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Xiaomi 17 Pro Max 256GB',
+  imagen: 'https://macstoreonline.com.mx/img/sku/iphone780_FZ.jpg',
+  precio: '—',
+  plan: '—',
+  caracteristicas: [
+    'Pantalla LTPO AMOLED 6.9" (≈ 2K, 2608×1200) con hasta 120 Hz, HDR10+, Dolby Vision, brillo hasta ~3,500 nits',
+    'Pantalla trasera secundaria AMOLED 2.9" (resolución ≈ 976×596)',
+    'Procesador Qualcomm Snapdragon 8 Elite Gen 5',
+    'Memoria RAM 12 GB / 16 GB + almacenamiento 256 GB (UFS 4.1)',
+    'Triple cámara trasera 50 MP + 50 MP (ultra gran angular) + 50 MP (telefoto periscópico con zoom óptico 5×, lente Leica, OIS, video hasta 8K HDR / 4K HDR)',
+    'Cámara frontal 50 MP para selfies',
+    'Batería 7,500 mAh con carga rápida 100 W, carga inalámbrica 50 W y carga inversa',
+    'Altavoces estéreo con Dolby Atmos',
+    'Certificación IP68 (resistente a agua y polvo)',
+    'Conectividad 5G / Wi-Fi / Bluetooth / NFC + UWB',
+    'Sistema Android 16 con HyperOS 3',
+    'Dual SIM'
+  ]
+},
+{
+  nombre: 'Honor 400 BDL Headphone Black  3 pz',
+  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/b/u/bundle.png',
+  precio: '$1,175 Mensual',
+  plan: 'Black a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Audífonos inalámbricos',
+    'Cancelación de ruido',
+    'Conectividad Bluetooth 5.3',
+    'Autonomía 30 horas',
+    'Carga USB-C',
+    'Micrófono dual',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor 400 BDL Headphone Gold  3pz',
+  imagen: 'https://www.dxomark.com/wp-content/uploads/medias/post-184771/Honor-400-Featured-image.png',
+  precio: '$1,175 Mensual',
+  plan: 'Black a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Edición dorada premium',
+    'Cancelación activa',
+    'Bluetooth 5.3',
+    'Autonomía 30h',
+    'Diseño cómodo',
+    'Carga rápida',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor Magic6 Lite Orange',
+  imagen: 'https://www.honor.com/content/dam/honor/es/shop/1560-1170/m6l-1212.png',
+  precio: '$720 Mensual',
+  plan: 'Azul 2 a 36 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla curva 6.78" AMOLED',
+    'Cámara 108 MP',
+    'Procesador Snapdragon 6 Gen 1',
+    'Batería 5300 mAh',
+    'Carga 35W',
+    'RAM 8GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor Magic6 Lite Silver',
+  imagen: 'https://www.honor.com/content/dam/honor/mx/products/smartphone/honor-magic6-lite/imgs/sec4-new/sec4-phone-bg-mb.png',
+  precio: '$720 Mensual',
+  plan: 'Azul 2 a 36 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla AMOLED 120Hz',
+    'Cámara 108 MP',
+    'Batería 5300 mAh',
+    'Snapdragon 6 Gen 1',
+    'MagicOS 8',
+    'RAM 8GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor Magic7 Lite BDL Headphones 5G Jcyan  2pz',
+  imagen: 'https://tiendahonor.cr/wp-content/uploads/2025/01/MKT_Bruce_Identity-Pictures_%E9%9D%92%E8%89%B2Cyan_%E7%BA%AF%E8%83%8CBack_RGB_PNG_20240814-2.png',
+  precio: '$970 Mensual',
+  plan: 'Plata a 30 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla AMOLED 120Hz',
+    'Cámara 108 MP',
+    'Snapdragon 7s Gen 2',
+    'Batería 5100 mAh',
+    '5G',
+    'Incluye audífonos',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor X5C Plus Meteor Silver',
+  imagen: 'https://texnohome.az/image/cache/catalog/21.10.2025/cdn-cgi-39-1200x630.png',
+  precio: '$495 Mensual',
+  plan: 'Azul 1 a 24 meses SIN ENGANCHE.',
+  caracteristicas: [
+    'Pantalla 6.56" HD+',
+    'Cámara 50 MP',
+    'Procesador Octa-Core',
+    'Batería 5000 mAh',
+    'Android 14',
+    'Almacenamiento 128GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor X5C Plus Ocean Cyan',
+  imagen: 'https://catalog.sixty60.co.za/v2/files/68e90439ed336b2f66207bbe?width=1440&height=1440',
+  precio: '$495 Mensual',
+  plan: 'Azul 1 a 24 meses SIN ENGANCHE.',
+  caracteristicas: [
+    'Pantalla 6.56" HD+',
+    'Cámara 50 MP',
+    'Batería 5000 mAh',
+    'Android 14',
+    'Procesador Octa-Core',
+    'Diseño resistente',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor X6C Cyan  4pz',
+  imagen: 'https://www.honor.com/content/dam/honor/common/product-list/product-series/honor-x6c/honor-x6c-g-list.png',
+  precio: '$601 Mensual',
+  plan: 'Azul 2 con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.56" IPS',
+    'Cámara 50 MP',
+    'Procesador MediaTek G36',
+    'Batería 5200 mAh',
+    'RAM 4GB',
+    'Android 14',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor X7D Desert Gold',
+  imagen: 'https://www.honor.com/content/dam/honor/common/product-list/product-series/honor-x7d/honor-x7d-gold-list.png',
+  precio: '$770 Mensual',
+  plan: 'Azul 3 a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.74" 90Hz',
+    'Cámara 50 MP',
+    'Procesador Snapdragon 480+',
+    'Batería 5000 mAh',
+    'Android 14',
+    'Carga rápida 22W',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor X7D Velvet Black  2pz',
+  imagen: 'https://miamicenters.com/wp-content/uploads/2025/09/x7dd-blackk.png',
+  precio: '$770 Mensual',
+  plan: 'Azul 3 a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.74" HD+',
+    'Cámara 50 MP',
+    '5G',
+    'Batería 5000 mAh',
+    'Android 14',
+    'Diseño elegante',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Honor X8C BDL Earbuds X7i Morado Nube',
+  imagen: 'https://www.honor.com/content/dam/honor/cl/product-list/smartphone/honor-x8c/honor-x8c-p.png',
+  precio: '$948 Mensual',
+  plan: 'Plata a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Incluye audífonos X7i',
+    'Pantalla 6.8" FHD+',
+    'Cámara 108 MP',
+    'Batería 5000 mAh',
+    'Carga 30W',
+    'RAM 8GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+{
+  nombre: 'Oppo A40 4G Lila  2pz',
+  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/dfb1fdb7a1cc7d82dc65a70ab5260406/t/m/tmlmxopopa40li00.png',
+  precio: '$500 Mensual',
+  plan: 'Azul 1 a 24 meses con 35% de engache.',
+  caracteristicas: [
+    'Pantalla 6.56" LCD',
+    'Cámara 50 MP',
+    'Procesador Helio G35',
+    'Batería 5000 mAh',
+    'ColorOS 14',
+    'RAM 4GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Oppo Find X8 Pro 5G Negro Grafito',
+  imagen: 'https://miphone.com.mx/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-28-a-las-9.50.54.png',
+  precio: '$1,545 Mensual',
+  plan: 'Platino a 30 meses con el 35% de enganche.',
+  caracteristicas: [
+    'Pantalla 6.82" AMOLED 120Hz',
+    'Cámara 50 MP Hasselblad',
+    'Snapdragon 8 Gen 4',
+    'Batería 5400 mAh',
+    'Carga 100W',
+    'RAM 12GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Oppo Reno14 BDL Headphones Verde',
+  imagen: 'https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/2005611050633.jpg?scale=500&qlty=75',
+  precio: '$1,255 Mensual',
+  plan: 'Black a 24 meses con el 35% de engache.',
+  caracteristicas: [
+    'Pantalla AMOLED 120Hz',
+    'Cámara 64 MP',
+    '5G',
+    'Snapdragon 7 Gen 2',
+    '5000 mAh',
+    'Audífonos incluidos',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+{
+  nombre: 'Motorola Moto G05 Verde  2pz',
+  imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/170403/MotoG05-VerdeProfundo-Hero.png?v=638681517847370000',
+  precio: '$497 Mensual',
+  plan: 'Azul 1 a 24 Meses SIN ENGACHE',
+  caracteristicas: [
+    'Pantalla 6.5" HD+',
+    'Cámara 16 MP',
+    'Procesador Unisoc T606',
+    'Batería 5000 mAh',
+    'RAM 4GB',
+    'Android 14',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Motorola Moto G15 Gris',
+  imagen: 'https://cdn5.coppel.com/mkp/74625726-1.jpg',
+  precio: '$515 Mensual',
+  plan: 'Azul 1 a 24 meses con 35% de enganche',
+  caracteristicas: [
+    'Pantalla 6.7" 120Hz',
+    'Cámara 50 MP OIS',
+    'Snapdragon 6 Gen 1',
+    'Batería 5000 mAh',
+    'Carga 30W',
+    'Android 15',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Motorola Moto G15 Verde',
+  imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/170371/MotoG15-Verde-Hero.png?v=638680034078200000',
+  precio: '$515 Mensual',
+  plan: 'Azul 1 a 24 meses con 35% de enganche',
+  caracteristicas: [
+    'Pantalla 6.7" FHD+',
+    'Cámara 50 MP',
+    '5G',
+    'Snapdragon 6 Gen 1',
+    '5000 mAh',
+    'Android 15',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Motorola Moto G24 Lavanda',
+  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/m/o/moto_g24_lavanda_both.png',
+  precio: '$500 Mensual',
+  plan: 'Azul 1 a 24 meses SIN ENGACHE',
+  caracteristicas: [
+    'Pantalla 6.6" HD+ 90Hz',
+    'Procesador Helio G85',
+    'Cámara 50 MP',
+    'Batería 5000 mAh',
+    'Android 14',
+    'RAM 4GB',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Motorola Moto G56 5G Azul  2pz',
+  imagen: 'https://mxmoto.vtexassets.com/arquivos/ids/171753-800-auto?v=638832717390770000&width=800&height=auto&aspect=true',
+  precio: '$769 Mensual',
+  plan: 'AZUL 3 a 24 meses con 35% de engache',
+  caracteristicas: [
+    'Pantalla 6.7" 120Hz',
+    'Cámara 50 MP',
+    'Procesador Snapdragon 4 Gen 2',
+    'Batería 5000 mAh',
+    '5G',
+    'Android 14',
+    'SEGURO DE PROTECCIÓN',
+    'CONTROL DE DATOS'
+  ]
+},
+
+{
+  nombre: 'Motorola Moto G56 5G Gris  2pz',
+  imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/m/o/motog56_gris_dual.png',
+  precio: '$769 Mensual',
+  plan: 'AZUL 3 a 24 meses con 35% de engache',
+  caracteristicas: [
+    'Pantalla FHD+ 120Hz',
+    'Procesador Snapdragon 4 Gen 2',
+    'Cámara 50 MP',
+    '5000 mAh',
+    'USB-C',
+    'Android 14',
+    'SEGURO DE PROTECCIÓN',
     'CONTROL DE DATOS'
   ]
 },
 
 ];
+
 
 
 // ============================================================
