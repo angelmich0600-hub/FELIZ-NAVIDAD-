@@ -418,6 +418,26 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
+    {
+  nombre: 'iPhone 17 Pro Max 256GB',
+  imagen: 'https://macstoreonline.com.mx/img/sku/iphone780_FZ.jpg',
+  precio: '—',
+  plan: '—',
+  caracteristicas: [
+    'Pantalla OLED ProMotion 6.9" con hasta 120 Hz, HDR y brillo extremo Super Retina XDR',
+    'Construcción en titanio de grado aeroespacial',
+    'Chip A18 Pro (arquitectura de próxima generación)',
+    'Memoria RAM 8 GB + almacenamiento 256 GB',
+    'Sistema de triple cámara Pro: gran angular + ultra gran angular + telefoto avanzado con zoom óptico, video 4K Dolby Vision',
+    'Cámara frontal TrueDepth con Face ID mejorado',
+    'Batería de larga duración con carga rápida e inalámbrica MagSafe',
+    'Audio espacial con altavoces estéreo',
+    'Certificación IP68 (resistente al agua y al polvo)',
+    'Conectividad 5G, Wi-Fi 6E, Bluetooth, NFC y UWB',
+    'Sistema iOS más reciente',
+    'Compatible con eSIM (modelos internacionales) / versión dual según región'
+  ]
+},
 
 {
   nombre: 'iPhone 16 128GB Negro',
@@ -865,27 +885,7 @@ const equipos = [
     'CONTROL DE DATOS'
   ]
 },
-
-{
-  nombre: 'Xiaomi 17 Pro Max 256GB',
-  imagen: 'https://macstoreonline.com.mx/img/sku/iphone780_FZ.jpg',
-  precio: '—',
-  plan: '—',
-  caracteristicas: [
-    'Pantalla LTPO AMOLED 6.9" (≈ 2K, 2608×1200) con hasta 120 Hz, HDR10+, Dolby Vision, brillo hasta ~3,500 nits',
-    'Pantalla trasera secundaria AMOLED 2.9" (resolución ≈ 976×596)',
-    'Procesador Qualcomm Snapdragon 8 Elite Gen 5',
-    'Memoria RAM 12 GB / 16 GB + almacenamiento 256 GB (UFS 4.1)',
-    'Triple cámara trasera 50 MP + 50 MP (ultra gran angular) + 50 MP (telefoto periscópico con zoom óptico 5×, lente Leica, OIS, video hasta 8K HDR / 4K HDR)',
-    'Cámara frontal 50 MP para selfies',
-    'Batería 7,500 mAh con carga rápida 100 W, carga inalámbrica 50 W y carga inversa',
-    'Altavoces estéreo con Dolby Atmos',
-    'Certificación IP68 (resistente a agua y polvo)',
-    'Conectividad 5G / Wi-Fi / Bluetooth / NFC + UWB',
-    'Sistema Android 16 con HyperOS 3',
-    'Dual SIM'
-  ]
-},
+    
 {
   nombre: 'Honor 400 BDL Headphone Black  3 pz',
   imagen: 'https://tienda.movistar.com.mx/media/catalog/product/cache/087d8656b93b378449aad7de37c3d04e/b/u/bundle.png',
