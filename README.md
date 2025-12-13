@@ -317,39 +317,6 @@ const equipos = [
   ]
 },
 
-{
-  nombre: 'Apple iPhone 15 128GB Negro',
-  imagen: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-black-select-202309?wid=940&hei=1112&fmt=png-alpha&.v=1692925511738',
-  precio: '$1,253 Mensual',
-  plan: 'Black a 36 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.1" Super Retina XDR',
-    'Cámara 48 MP + 12 MP',
-    'Procesador Apple A16 Bionic',
-    'USB-C',
-    'Batería hasta 26 horas de video',
-    'Dynamic Island',
-    'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
-
-{
-  nombre: 'Apple iPhone 15 128GB Rosa',
-  imagen: 'https://macstoreonline.com.mx/img/sku/iphone634_FZ.jpg',
-  precio: '$1,253 Mensual',
-  plan: 'Black a 36 meses con 35% de engache.',
-  caracteristicas: [
-    'Pantalla 6.1" Super Retina XDR',
-    'Cámara 48 MP + 12 MP',
-    'Procesador Apple A16 Bionic',
-    'USB-C',
-    'Batería hasta 26 horas de video',
-    'Dynamic Island',
-    'SEGURO DE PROTECCIÓN',
-    'CONTROL DE DATOS'
-  ]
-},
 
 {
   nombre: 'Apple iPhone 16E 128GB Negro',
